@@ -22,5 +22,15 @@
     "options": {},
     "validations": {},
     "fieldType": "string"
+  },
+  {
+    "name": "creation",
+    "description": "This is used for the date the blog post was created",
+    "fieldId": "creation",
+    "modelId": "blog",
+    "componentId": "date",
+    "options": {},
+    "validations": {},
+    "fieldType": "date"
   }
 ]
