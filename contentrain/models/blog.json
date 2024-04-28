@@ -22,5 +22,15 @@
     "options": {},
     "validations": {},
     "fieldType": "date"
+  },
+  {
+    "name": "reading_time",
+    "description": "This is used to show the reader the estimated reading time",
+    "fieldId": "reading_time",
+    "modelId": "blog",
+    "componentId": "integer",
+    "options": {},
+    "validations": {},
+    "fieldType": "number"
   }
 ]
