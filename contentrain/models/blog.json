@@ -1,0 +1,16 @@
+[
+  {
+    "name": "title",
+    "description": "This is used for the main title of the blog",
+    "fieldId": "title",
+    "modelId": "blog",
+    "componentId": "multi-line-text",
+    "options": {
+      "title-field": {
+        "value": true
+      }
+    },
+    "validations": {},
+    "fieldType": "string"
+  }
+]
