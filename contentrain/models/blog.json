@@ -12,5 +12,15 @@
     },
     "validations": {},
     "fieldType": "string"
+  },
+  {
+    "name": "date",
+    "description": "This is used for the date the blog post was created",
+    "fieldId": "date",
+    "modelId": "blog",
+    "componentId": "single-line-text",
+    "options": {},
+    "validations": {},
+    "fieldType": "string"
   }
 ]
