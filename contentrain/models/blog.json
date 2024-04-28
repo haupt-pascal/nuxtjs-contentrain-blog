@@ -32,5 +32,15 @@
     "options": {},
     "validations": {},
     "fieldType": "number"
+  },
+  {
+    "name": "text",
+    "description": "This is used for the main text of the blog",
+    "fieldId": "text",
+    "modelId": "blog",
+    "componentId": "multi-line-text",
+    "options": {},
+    "validations": {},
+    "fieldType": "string"
   }
 ]
