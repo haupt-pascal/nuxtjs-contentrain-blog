@@ -1,12 +1,12 @@
 ---
 ID: "eb8b9290d417"
-createdAt: "Sun Apr 28 2024 20:49:10 GMT+0200 (Central European Summer Time)"
-updatedAt: "Sun Apr 28 2024 20:49:10 GMT+0200 (Central European Summer Time)"
-title: "This is a test blog"
-creation: "2024-04-28T18:49:00.000Z"
-reading_time: 5
-text: "This is just a test blog\n# This is just a test blog\n### This is just a text blog\n\n``` bash\nHello World!\n```"
+createdAt: "2024-04-28T18:49:10.000Z"
+updatedAt: "2024-04-29T04:59:12.636Z"
 status: "publish"
+title: "This is a test blog"
+creation: "2024-04-29T18:49:00.000Z"
+reading_time: 5
+text: "This is just a test blog\n# This is just a test blog\n### This is just a text blog\n\n``` bash\nHello World!\n```\n\nLOL"
 scheduled: false
 path: ""
 ---
