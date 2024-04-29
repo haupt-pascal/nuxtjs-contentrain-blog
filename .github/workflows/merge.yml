@@ -1,4 +1,4 @@
-name: Merge contentrain to main
+name: contentrain_to_main_automerger
 
 on:
   push:
