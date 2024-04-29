@@ -19,7 +19,8 @@ jobs:
         run: git fetch origin contentrain
 
       - name: merge_into_main
-        run: git merge --no-ff ${{ github.event.before }} -m "Merging the changes from contentrain into the main branch"
+        run: |
+          git -c user.email="actions@example.com" -c user.name="GitHub Actions" merge --no-ff origin/contentrain -m "Merging the changes from contentrain into the main branch"
 
       - name: push_changes
         uses: ad-m/github-push-action@master
