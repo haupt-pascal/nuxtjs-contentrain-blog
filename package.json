@@ -10,9 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^2.0.0",
+    "@nuxtjs/mdc": "^0.7.0",
+    "markdown-it": "^14.1.0",
     "nuxt": "^3.11.2",
     "sass": "^1.75.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.0.1"
   }
 }

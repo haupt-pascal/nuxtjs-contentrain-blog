@@ -13,8 +13,6 @@ const blog: {
   scheduled: boolean;
   path: string;
 }[] = blogData;
-
-console.log(blog);
 </script>
 <template>
   <div class="app">
@@ -23,34 +21,79 @@ console.log(blog);
       <div class="blog__posts">
         <div v-for="(post, id) in blog" :key="id" class="blog__post">
           <h2>{{ post.title }}</h2>
-          <p>{{ post.text }}</p>
+          <MDC :value="post.text" class="markdown" />
         </div>
       </div>
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
+
+<style>
+body {
+  background: #1D1E20;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
 }
 
 .blog {
   width: 80%;
   max-width: 1200px;
-  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
 .blog__posts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
+
+.line {
+  background: #2E2F33 !important;
+  padding: 12px;
+}
+
+pre {
+  border-radius: 20px !important;
+}
+
 </style>
+
+<!--
+<style>
+pre {
+  padding: 1em 0 !important;
+  --tw-prose-pre-bg: #8881 !important;
+}
+.line {
+  display: block;
+  padding: 0 1rem;
+  background: red !important;
+}
+.line.highlight {
+  width: 100%;
+  background-color: #8881 !important;
+}
+.line.diff.remove {
+  background-color: rgba(194, 58, 58, 0.3) !important;
+}
+.line.diff.add {
+  background-color: rgba(46, 141, 46, 0.3) !important;
+}
+.line.diff.remove::before {
+  content: '-';
+  color: #c23a3a;
+  position: absolute;
+}
+.line.diff.add::before {
+  content: '+';
+  color: #23b73c;
+  position: absolute;
+}
+</style>
+-->
