@@ -1,12 +1,12 @@
 ---
-ID: "eb8b9290d417"
-createdAt: "2024-04-28T18:49:10.000Z"
-updatedAt: "2024-04-29T05:55:56.827Z"
+ID: "fc6fa2ef0c13"
+createdAt: "Mon Apr 29 2024 09:02:18 GMT+0200 (Central European Summer Time)"
+updatedAt: "Mon Apr 29 2024 09:02:18 GMT+0200 (Central European Summer Time)"
+title: "This is the second test blog post"
+creation: "2024-04-30T07:02:00.000Z"
+reading_time: 8
+text: "# This is the second test blog post \n## LELELE"
 status: "publish"
-title: "This is a test blog"
-creation: "2024-05-03T18:49:00.000Z"
-reading_time: 5
-text: "This is just a test blog\n# This is just a test blog\n### This is just a text blog\n\n``` bash\nHello World!\n```\n\n--> We do want to test the workflow now\nAnd again :D \nAnd again :D "
 scheduled: false
 path: ""
 ---
