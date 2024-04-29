@@ -1,0 +1,25 @@
+name: Merge contentrain to main
+
+on:
+  push:
+    branches:
+      - contentrain
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: merge_contentrain_to_main
+        run: git merge --no-ff ${{ github.event.before }} -m "Merge contentrain into main"
+
+      - name: push_changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
