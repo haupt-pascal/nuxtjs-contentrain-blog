@@ -10,13 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
+      - name: checkout_main
         uses: actions/checkout@v2
         with:
           ref: main
 
-      - name: merge_contentrain_to_main
-        run: git merge --no-ff ${{ github.event.before }} -m "Merge contentrain into main"
+      - name: fetch_from_contentrain
+        run: git fetch origin contentrain
+
+      - name: merge_into_main
+        run: git merge --no-ff ${{ github.event.before }} -m "Merging the changes from contentrain into the main branch"
 
       - name: push_changes
         uses: ad-m/github-push-action@master
