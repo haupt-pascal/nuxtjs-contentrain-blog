@@ -16,7 +16,13 @@ const blog: {
 </script>
 <template>
   <div class="app">
-    <h1>Testing hehe</h1>
+    <div class="about">
+      <h1>Hey, I'm Pascal 👋</h1>
+      <p>
+        I am working at group.one as a linux system administrator. I am also a
+        software engineer with a huge focus on frontend development and devops.
+      </p>
+    </div>
     <div class="blog">
       <div class="blog__posts">
         <div v-for="(post, id) in blog" :key="id" class="blog__post">

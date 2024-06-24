@@ -15,7 +15,7 @@
 </template>
 <style lang="scss" scoped>
 .navigation {
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
